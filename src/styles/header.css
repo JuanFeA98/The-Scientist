@@ -1,0 +1,112 @@
+header{
+    /* background: red; */
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid white;
+}
+
+header h2{
+    color: white;
+    font-size: 1.3em;
+}
+
+.toogle_menu{
+    /* background: purple; */
+    width: 40px;
+    height: 40px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.toogle_menu::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    box-shadow: 0 10px 0 white;
+}
+
+.toogle_menu::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    background: white;
+    border-radius: 10px;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.toogle_menu--active::before{
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 black;
+}
+
+.toogle_menu--active::after{
+    transform: translateY(0px) rotate(45deg);
+}
+
+nav{
+    width: 0%;
+    min-height: calc(100vh - 60px);
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    right: 0px;
+    transition: 0.5s;
+}
+
+.Navbar{
+    /* background: plum; */
+    height: 50vh;
+    width: 60%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+}
+
+.Navbar li{
+    margin: 20px 0;
+}
+
+.Navbar li a{
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.Navbar li a:hover{
+    color: white;
+    background: black;
+}
+
+.Login{
+    background: palegreen;
+    padding: 0;
+}
+
+.nav--active{
+    width: 100%;
+    transition: 0.5s;   
+}
