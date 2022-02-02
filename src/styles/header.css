@@ -73,7 +73,6 @@ nav{
 }
 
 .Navbar{
-    /* background: plum; */
     height: 50vh;
     width: 60%;
     padding: 0;
@@ -88,6 +87,9 @@ nav{
 
 .Navbar li{
     margin: 20px 0;
+    width: 200px;
+    /* background: red; */
+    text-align: center;
 }
 
 .Navbar li a{
@@ -102,11 +104,38 @@ nav{
 }
 
 .Login{
-    background: palegreen;
+    /* background: palegreen; */
     padding: 0;
 }
 
 .nav--active{
     width: 100%;
     transition: 0.5s;   
+    background: plum!important;
+
+}
+
+nav .Login{
+    width: 80px;
+    height: 50px;
+    /* background: darkblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav .Login li{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 2px 0;
+}
+
+nav .Login li a{
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
 }
